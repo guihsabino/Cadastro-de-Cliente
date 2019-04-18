@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Clientes</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/geral.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1 class="titulo">Cadastro de Clientes</h1>
+		</div>
+	</header>
+
+	<main>
+		<section class="container">
+			<h2 id="titulo-form">Adicionar Novo Cliente</h2>
+			<form id="form-adiciona">
+				<div class="ficha">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="Digite seu nome completo" class="campo"
+						autofocus required>
+				</div>
+				<div class="ficha">
+					<label for="sobrenome">Sobrenome:</label>
+					<input id="sobrenome" name="sobrenome" type="text" placeholder="Digite seu Sobrenome"
+						class="campo campo-medio" required>
+				</div>
+				<div class="ficha">
+					<label for="rg">RG:</label>
+					<input id="rg" name="rg" type="text" placeholder="Digite seu RG" class="campo campo-medio" required>
+				</div>
+				<div class="ficha">
+					<label for="cpf">CPF:</label>
+					<input id="cpf" type="text" maxlength="14" name="cpf" onkeydown="cadastro: mascara(this, mCPF);"
+						placeholder="Digite seu CPF" class="campo campo-medio" required>
+				</div>
+				<div class="ficha">
+					<label for="nascimento">Data de Nascimento:</label>
+					<input id="nascimento" name="nascimento" type="date" placeholder="Digite sua data de Nascimento"
+						class="campo" autofocus required>
+				</div>
+				<div class="ficha">
+					<label for="celular">Celular:</label>
+					<input id="celular" name="celular" type="text" maxlength="15" name="celular"
+						onkeydown="cadastro: mascara(this, mCel);" placeholder=" Digite seu Celular" class="campo"
+						autofocus required>
+				</div>
+				<button id="adicionar-cliente" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+	</main>
+</body>
+<script src="JS/cadastro.js"></script>
+
+</html>
